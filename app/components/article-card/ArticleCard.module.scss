@@ -1,0 +1,14 @@
+@use "../../scss/mixins";
+
+.article__card {
+  padding: 1rem 0;
+  margin: 0 1rem;
+
+  .article__title {
+    @include mixins.text-preset-five;
+  }
+
+  .article__Date {
+    @include mixins.text-preset-eight-italic;
+  }
+}

@@ -1,8 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.scss";
 import xIcon from "./assets/logo-x.svg";
 import gitHubIcon from "./assets/logo-github.svg";
 import linkedinIcon from "./assets/logo-linkedin.svg";
+import ArticleCard from "@/app/components/article-card/ArticleCard";
+import Footer from "@/app/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -23,17 +26,27 @@ export default function Home() {
           my corner of the internet — thanks for stopping by!
         </p>
         <div className={styles.icon__container}>
-          <div className={styles.icon}>
+          <Link href="#" className={styles.icon}>
             <Image src={xIcon} alt="X Icon" />
-          </div>
-          <div className={styles.icon}>
+          </Link>
+          <Link href="#" className={styles.icon}>
             <Image src={gitHubIcon} alt="GitHub Icon" />
-          </div>
-          <div className={styles.icon}>
+          </Link>
+          <Link href="#" className={styles.icon}>
             <Image src={linkedinIcon} alt="Linkedin Icon" />
-          </div>
+          </Link>
         </div>
       </main>
+      <section className={styles.articles}>
+        <h2 className={styles.articles__title}>Latest Articles</h2>
+        <div className={styles.articles__container}>
+          <ArticleCard />
+          <Link className={styles.articles__link} href="#">
+            View all articles
+          </Link>
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 }
