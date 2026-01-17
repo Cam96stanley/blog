@@ -1,0 +1,58 @@
+@use "../../scss/variables";
+@use "../../scss/mixins";
+
+.header {
+  margin: 0 0.5rem;
+}
+
+.header__container {
+  display: flex;
+  margin: 1rem auto;
+  padding: 0.25rem;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid variables.$neutral-800;
+  border-radius: 10px;
+  max-width: 768px;
+
+  .avatar {
+    border-radius: 10px;
+  }
+
+  .nav__container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    .nav__button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      margin-right: 0.5rem;
+
+      @media (min-width: 450px) {
+        display: none;
+      }
+    }
+
+    .tablet__nav {
+      display: none;
+      margin-right: 1rem;
+
+      .link {
+        text-decoration: none;
+        @include mixins.text-preset-eight;
+
+        &:hover {
+          font-weight: 600;
+        }
+      }
+
+      @media (min-width: 450px) {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+    }
+  }
+}

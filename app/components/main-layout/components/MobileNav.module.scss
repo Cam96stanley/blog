@@ -1,0 +1,38 @@
+@use "../../../scss/mixins";
+@use "../../../scss/variables";
+
+.mobile__nav_container {
+  position: absolute;
+  top: 4.5rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: variables.$neutral-800;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  z-index: 1000;
+
+  @media (min-width: 450px) {
+    display: none;
+  }
+
+  .nav__item {
+    border-bottom: 1px solid variables.$neutral-900;
+    padding: 0.5rem 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .link {
+      text-decoration: none;
+      @include mixins.text-preset-eight;
+
+      &:hover {
+        font-weight: 600;
+      }
+    }
+  }
+}
