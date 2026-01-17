@@ -1,0 +1,7 @@
+@use "./reset";
+@use "./mixins";
+@use "./variables";
+
+body {
+  background-color: variables.$neutral-900;
+}

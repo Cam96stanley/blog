@@ -1,0 +1,177 @@
+@use "./variables";
+
+@mixin text-preset-one(
+  $weight: 800,
+  $style: normal,
+  $size: 40px,
+  $line-height: 1.3,
+  $letter-spacing: -1px
+) {
+  font-family: var(--font-mono-sans);
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: variables.$neutral-0;
+}
+
+@mixin text-preset-two(
+  $weight: 800,
+  $style: normal,
+  $size: 32px,
+  $line-height: 1.3,
+  $letter-spacing: -0.5px
+) {
+  font-family: var(--font-mono-sans);
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: variables.$neutral-0;
+}
+
+@mixin text-preset-three(
+  $weight: 700,
+  $style: normal,
+  $size: 28px,
+  $line-height: 1.3,
+  $letter-spacing: -0.5px
+) {
+  font-family: var(--font-mono-sans);
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: variables.$neutral-0;
+}
+
+@mixin text-preset-four(
+  $weight: 600,
+  $style: normal,
+  $size: 24px,
+  $line-height: 1.3,
+  $letter-spacing: -0.5px
+) {
+  font-family: var(--font-mono-sans);
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: variables.$neutral-0;
+}
+
+@mixin text-preset-five(
+  $weight: 600,
+  $style: normal,
+  $size: 20px,
+  $line-height: 1.3,
+  $letter-spacing: -0.5px
+) {
+  font-family: var(--font-mono-sans);
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: variables.$neutral-0;
+}
+
+@mixin text-preset-six(
+  $weight: 500,
+  $style: normal,
+  $size: 18px,
+  $line-height: 1.5,
+  $letter-spacing: -0.5px
+) {
+  font-family: var(--font-mono-sans);
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: variables.$neutral-0;
+}
+
+@mixin text-preset-seven(
+  $weight: 400,
+  $style: normal,
+  $size: 18px,
+  $line-height: 1.5,
+  $letter-spacing: -0.2
+) {
+  font-family: var(--font-mono-sans);
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: variables.$neutral-400;
+}
+
+@mixin text-preset-seven-semibold(
+  $weight: 600,
+  $style: normal,
+  $size: 18px,
+  $line-height: 1.5,
+  $letter-spacing: -0.2px
+) {
+  font-family: var(--font-mono-sans);
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: variables.$neutral-400;
+}
+
+@mixin text-preset-eight(
+  $weight: 400,
+  $style: normal,
+  $size: 16px,
+  $line-height: 1.3,
+  $letter-spacing: -0.2px
+) {
+  font-family: var(--font-mono-sans);
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: variables.$neutral-400;
+}
+
+@mixin text-preset-eight-italic(
+  $weight: 400,
+  $style: italic,
+  $size: 16px,
+  $line-height: 1.3,
+  $letter-spacing: -0.2px
+) {
+  font-family: var(--font-mono-sans);
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: variables.$neutral-400;
+}
+
+@mixin text-preset-nine(
+  $weight: 400,
+  $style: normal,
+  $size: 16px,
+  $line-height: 1.46,
+  $letter-spacing: -0.4px
+) {
+  font-family: var(--font-fira-code);
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: variables.$neutral-400;
+}
