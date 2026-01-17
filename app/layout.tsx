@@ -17,9 +17,9 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "Cameron Stanley | Blog",
+  title: "Cameron Stanley | Front-End Developer Blog",
   description:
-    "A blog page for Cameron Stanley that details out my journey in web development",
+    "Personal blog documenting Cameron Stanley’s journey in front-end web development, projects, and lessons learned.",
 };
 
 export default function RootLayout({
