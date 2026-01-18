@@ -1,0 +1,61 @@
+@use "../../scss/mixins";
+@use "../../scss/variables";
+
+.newsletter {
+  margin: 0 auto;
+  max-width: 600px;
+  min-height: 100vh;
+
+  .newsletter__title {
+    @include mixins.text-preset-two;
+    margin: 0 1rem;
+  }
+
+  .newsletter__para {
+    margin: 1rem;
+    @include mixins.text-preset-seven;
+  }
+
+  .newsletter_para_bold {
+    margin: 1rem;
+    @include mixins.text-preset-five;
+  }
+
+  .email__form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 1rem;
+  }
+
+  .email__label {
+    @include mixins.text-preset-seven;
+  }
+
+  .email__input {
+    @include mixins.text-preset-seven;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: variables.$neutral-800;
+    border: 1px solid variables.$neutral-700;
+  }
+
+  .submit__button {
+    display: flex;
+    align-self: flex-start;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    background-color: variables.$blue-500;
+    @include mixins.text-preset-six;
+    color: variables.$neutral-800;
+  }
+
+  .form__footer_text {
+    @include mixins.text-preset-eight;
+    margin: 0.5rem 0 0 1rem;
+  }
+
+  .smile__emoji {
+    margin: 0.5rem 1rem;
+  }
+}
