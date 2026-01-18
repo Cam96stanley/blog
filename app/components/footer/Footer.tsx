@@ -3,7 +3,9 @@ import styles from "./Footer.module.scss";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <p className={styles.footer__text}>Learning, building, repeating 🔁</p>
+      <div className={styles.footer__container}>
+        <p className={styles.footer__text}>Learning, building, repeating 🔁</p>
+      </div>
     </footer>
   );
 };

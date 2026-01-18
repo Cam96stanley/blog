@@ -42,22 +42,22 @@ const MainLayout = () => {
           </button>
 
           <nav className={styles.tablet__nav}>
-            <Link className={styles.link} href="#">
+            <Link className={styles.link} href="/">
               Home
             </Link>
-            <Link className={styles.link} href="#">
+            <Link className={styles.link} href="/blog">
               Blog
             </Link>
-            <Link className={styles.link} href="#">
+            <Link className={styles.link} href="/about">
               About
             </Link>
-            <Link className={styles.link} href="#">
+            <Link className={styles.link} href="/newsletter">
               Newsletter
             </Link>
           </nav>
         </div>
       </div>
-      {open && <MobileNav />}
+      {open && <MobileNav onClose={() => setOpen(false)} />}
     </header>
   );
 };

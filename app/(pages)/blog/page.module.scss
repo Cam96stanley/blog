@@ -1,0 +1,46 @@
+@use "../../scss/mixins";
+@use "../../scss/variables";
+
+.articles {
+  margin: 0 auto;
+  max-width: 600px;
+  height: 100vh;
+
+  @media (min-width: 600px) {
+    padding: 0 4.5rem;
+    border-left: 2px solid variables.$neutral-600;
+    border-right: 2px solid variables.$neutral-600;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 1rem;
+    padding: 1.5rem 0;
+    margin: 0 1rem;
+    border-bottom: 1px solid variables.$neutral-600;
+  }
+
+  .articles__title {
+    position: relative;
+    display: inline-block;
+    @include mixins.text-preset-two;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 185px;
+      bottom: 0.35rem;
+      width: 50px;
+      height: 0.25rem;
+      background-color: variables.$blue-500;
+      z-index: -1;
+    }
+  }
+
+  .articles__text {
+    @include mixins.text-preset-seven;
+  }
+}

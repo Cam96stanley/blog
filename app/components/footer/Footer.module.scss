@@ -1,11 +1,20 @@
 @use "../../scss/mixins";
+@use "../../scss/variables";
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem;
+  margin: 0 0.5rem 0.5rem 0.5rem;
+
+  .footer__container {
+    margin: 0 auto;
+    padding: 1rem 0.25rem;
+    align-items: center;
+    border: 2px solid variables.$neutral-600;
+    border-radius: 10px;
+    max-width: 768px;
+  }
 
   .footer__text {
     @include mixins.text-preset-eight;
+    text-align: center;
   }
 }

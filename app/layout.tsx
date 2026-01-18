@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans, Fira_Code } from "next/font/google";
 import "./scss/globals.scss";
 import MainLayout from "@/app/components/main-layout/MainLayout";
+import Footer from "@/app/components/footer/Footer";
 
 const dmSans = DM_Sans({
   weight: ["400", "500", "600", "700", "800"],
@@ -31,7 +32,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${dmSans.variable} ${firaCode.variable}`}>
         <MainLayout />
-        {children}
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -5,7 +5,6 @@ import xIcon from "./assets/logo-x.svg";
 import gitHubIcon from "./assets/logo-github.svg";
 import linkedinIcon from "./assets/logo-linkedin.svg";
 import ArticleCard from "@/app/components/article-card/ArticleCard";
-import Footer from "@/app/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -41,12 +40,11 @@ export default function Home() {
         <h2 className={styles.articles__title}>Latest Articles</h2>
         <div className={styles.articles__container}>
           <ArticleCard />
-          <Link className={styles.articles__link} href="#">
+          <Link className={styles.articles__link} href="/blog">
             View all articles
           </Link>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }
