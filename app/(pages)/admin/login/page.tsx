@@ -16,7 +16,7 @@ const AdminLogin = () => {
 
     try {
       await signIn(email, password);
-      router.push("/admin");
+      router.push("/admin/protected");
     } catch {
       setError("Unauthorized");
     }

@@ -1,0 +1,34 @@
+@use "../../../scss/mixins";
+@use "../../../scss/variables";
+
+.admin__dashboard {
+  margin: 0 auto;
+  max-width: 600px;
+  min-height: 100vh;
+
+  @media (min-width: 600px) {
+    padding: 0 4.5rem;
+    border-left: 2px solid variables.$neutral-600;
+    border-right: 2px solid variables.$neutral-600;
+  }
+
+  .dashboard__title {
+    @include mixins.text-preset-two;
+    margin: 0 1rem;
+    padding: 1rem 0;
+  }
+
+  .create__button {
+    margin: 0 0 0 1rem;
+    display: flex;
+    justify-self: start;
+    padding: 0.25rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: variables.$blue-500;
+    @include mixins.text-preset-six;
+    color: variables.$neutral-800;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
