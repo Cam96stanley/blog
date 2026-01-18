@@ -1,6 +1,10 @@
 @use "../../scss/mixins";
 @use "../../scss/variables";
 
+.blog__link {
+  text-decoration: none;
+}
+
 .article__card {
   padding: 1rem 0;
   margin: 0 1rem;
