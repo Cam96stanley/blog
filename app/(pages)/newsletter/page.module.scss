@@ -6,7 +6,14 @@
   max-width: 600px;
   min-height: 100vh;
 
+  @media (min-width: 600px) {
+    padding: 0 4.5rem;
+    border-left: 2px solid variables.$neutral-600;
+    border-right: 2px solid variables.$neutral-600;
+  }
+
   .newsletter__title {
+    padding: 1rem 0;
     @include mixins.text-preset-two;
     margin: 0 1rem;
   }

@@ -1,0 +1,30 @@
+@use "../../../scss/variables";
+@use "../../../scss/mixins";
+
+.single_blog_page {
+  margin: 0 auto;
+  max-width: 600px;
+  min-height: 100vh;
+
+  @media (min-width: 600px) {
+    padding: 0 4.5rem;
+    border-left: 2px solid variables.$neutral-600;
+    border-right: 2px solid variables.$neutral-600;
+  }
+
+  .article__title {
+    @include mixins.text-preset-one;
+    margin: 0 0 0.25rem 1rem;
+    padding: 1rem 0;
+  }
+
+  .publish__date {
+    @include mixins.text-preset-eight-italic;
+    margin: 0 1rem;
+  }
+
+  .article__body {
+    @include mixins.text-preset-seven;
+    margin: 0.5rem 1rem;
+  }
+}
