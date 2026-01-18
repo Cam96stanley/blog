@@ -1,0 +1,45 @@
+@use "../../../scss/mixins";
+@use "../../../scss/variables";
+
+.login__page {
+  margin: 0 auto;
+  max-width: 600px;
+  min-height: 100vh;
+
+  @media (min-width: 600px) {
+    padding: 0 4.5rem;
+    border-left: 2px solid variables.$neutral-600;
+    border-right: 2px solid variables.$neutral-600;
+  }
+
+  .form__container {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .login__title {
+      @include mixins.text-preset-two;
+    }
+
+    .input {
+      @include mixins.text-preset-seven;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      background-color: variables.$neutral-800;
+      border: 1px solid variables.$neutral-700;
+    }
+
+    .submit__button {
+      display: flex;
+      align-items: center;
+      padding: 0.25rem 1.5rem;
+      border: none;
+      border-radius: 10px;
+      background-color: variables.$blue-500;
+      @include mixins.text-preset-six;
+      color: variables.$neutral-800;
+    }
+  }
+}
